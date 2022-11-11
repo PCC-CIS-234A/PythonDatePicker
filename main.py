@@ -1,6 +1,4 @@
 import pathlib
-import tkinter as tk
-import tkinter.ttk as ttk
 import pygubu
 
 PROJECT_PATH = pathlib.Path(__file__).parent
@@ -27,6 +25,7 @@ class MainApp:
         self.__date_range_variable = builder.get_variable('date_range_variable')
         builder.connect_callbacks(self)
         self.__start_date_entry.set_date('10/01/2022')  # A date before any message log entries
+        self.do_search()  # default values
 
     def do_search(self):
         self.__date_range_variable.set(self.__start_date_entry.get() + ' - ' + self.__end_date_entry.get())
@@ -39,5 +38,3 @@ class MainApp:
 if __name__ == '__main__':
     app = MainApp()
     app.run()
-
-
