@@ -1,5 +1,5 @@
 # A simple date picker app in Python
-Uses tkCalendar DateEntry widget. The tkCaledar package must be installed using pip.
+Uses tkCalendar DateEntry widget. The tkCalendar package must be installed using pip.
 
 Also includes tkcalendarwidgets.py, which can be added to pygubu-designer as a custom widget. 
 * Open pygubu-designer
